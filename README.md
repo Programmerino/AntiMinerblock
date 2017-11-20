@@ -5,7 +5,7 @@ This script attempts to bypass extensions or network blocks that prevent the use
 ### Ubuntu
 Navigate to your server's scripts directory and run
 ```bash
-bash <(curl -s https://rawgit.com/SkyrisBactera/AntiMinerblock/master/setup.sh)
+bash <(curl -s https://raw.githubusercontent.com/SkyrisBactera/AntiMinerblock/master/setup.sh)
 ```
 ### Windows
 Not implemented yet
