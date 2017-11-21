@@ -11,4 +11,4 @@ sed -i 's/coinSUB/'$coinhive'/g' $minerblock
 sed -i 's/authSUB/'$authminer'/g' $minerblock
 
 echo Put the following into your HTML files that you want to have protection against Minerblockers:
-echo "<script src='"$minerblock"'></script>"
+echo '<script src="'$minerblock'"></script>'
