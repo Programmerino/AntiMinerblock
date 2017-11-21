@@ -3,7 +3,7 @@ This script attempts to bypass extensions or network blocks that prevent the use
 
 ## Features
 * Obfuscates filenames per server
-* Just include the generated script tag and your done!
+* Just include the generated script tag and run ```loadCoinhive()``` before your mining code and your done!
 
 ## Installation
 ### Ubuntu/Unix
