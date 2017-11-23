@@ -12,7 +12,7 @@ echo Substituting the keys into $minerblock...
 sed -i 's/cHive/'$cHiveKey'/g' $minerblock
 sed -i 's/cLoot/'$cLootKey'/g' $minerblock
 sed -i 's/cCoins/'$cCoinsKey'/g' $minerblock
-echo Do you want to enable proxy functionality? This is very recommended, however, your computer/server would have to host it (y/n)
+echo "Do you want to enable proxy functionality? This is very recommended, however, your computer/server would have to host it (y/n)"
 read proxyYes
 declare -l proxyYes
 proxyYes=$proxyYes
