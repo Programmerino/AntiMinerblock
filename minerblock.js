@@ -102,6 +102,7 @@ function processInfo(cb) {
 function loadCryptominer(cb) {
   tryLoad(function() {
     processInfo(function (miner, status) {
+      //strSub
       cb(miner, status);
     })
   })
