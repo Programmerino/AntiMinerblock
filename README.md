@@ -10,7 +10,7 @@ This script attempts to bypass extensions or network blocks that prevent the use
 ## Features
 * 100% success rate
 * Obfuscates filenames per server
-* Automatically creates proxy
+* Automatically creates proxy (using coin-hive-stratum)
 * Random port
 * Interactive setup
 
