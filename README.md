@@ -6,6 +6,7 @@ This script attempts to bypass extensions or network blocks that prevent the use
 * AntiMiner
 * Adblock (all lists enabled)
 * Adblock Plus
+### Test it at: https://skyrisbactera.com/antiminerblock/test.html
 
 ## Features
 * 100% success rate
