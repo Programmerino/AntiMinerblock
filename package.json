@@ -1,0 +1,25 @@
+{
+  "name": "antiminerblock",
+  "version": "1.0.0",
+  "description": " This script attempts to bypass extensions or network blocks that prevent the use of Coinhive. Extremely alpha ",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkyrisBactera/AntiMinerblock.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "SkyrisBactera",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/SkyrisBactera/AntiMinerblock/issues"
+  },
+  "homepage": "https://github.com/SkyrisBactera/AntiMinerblock#readme",
+  "dependencies": {
+    "coin-hive-stratum": "^1.4.10"
+  }
+}

