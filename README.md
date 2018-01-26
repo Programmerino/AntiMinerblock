@@ -61,7 +61,7 @@ loadCryptominer(function(miner, status) {
 });
 ```
 ## Donate!
-If you appreciate this project, feel free to send me money at:
+If you appreciate this project, feel free to send me PayPal money at:
 ```davis@skyrisbactera.com```
 
 ## TODO
